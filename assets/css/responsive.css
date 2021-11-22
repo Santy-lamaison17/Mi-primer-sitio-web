@@ -1,0 +1,309 @@
+@media (max-width: 991px) {
+	.navbar .HeaderRedes {
+		display: none;
+	}
+}
+
+/* ///////RESPONSIVE TABLET /////// */
+
+@media (max-width: 768px) {
+
+	/* SECCION CARROUSEL */
+	.SeccionSliderPrincipal {
+		height: auto;
+	}
+
+	.SeccionSliderPrincipal .Video {
+		max-width: 768px;
+	}
+
+	.SeccionSliderPrincipal .Video .VideoYouTube {
+		width: 500px;
+		height: 300px;
+	}
+	/* SECCION CARROUSEL END */
+
+	/* SECCION CARROUSEL */
+	.conteinerServicio .InfoServicio {
+		max-width: 250px;
+	}
+
+	.conteinerServicio .InfoServicio img {
+		width: 250px;
+		border-radius: 10px;
+	}
+	/* SECCION CARROUSEL END */
+
+	/* SECCION MEDIOS DE PAGO */
+	.conteinerMediosPago {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.conteinerMediosPago .TitleMediosDePago {
+		display: flex;
+		justify-content: center;
+	}
+
+	.conteinerMediosPago .mediosPago {
+		margin: 2rem;
+		display: flex;
+		flex-direction: row;
+		column-gap: 10px;
+	}
+
+	.conteinerMediosPago .mediosPago .flexImg {
+		width: 220px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.conteinerMediosPago .mediosPago .flexImg .img1 {
+		width: 220px;
+	}
+
+	.conteinerMediosPago .mediosPago .flexImg .img2 {
+		width: 220px;
+	}
+
+	.conteinerMediosPago .mediosPago .flexImg .img3 {
+		width: 220px;
+	}
+	/* SECCION MEDIOS DE PAGO END */
+
+	/* FOOTER */
+	.conteinerFooter {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.conteinerFooter .NavFooter {
+		display: none;
+	}
+	/* FOOTER END */
+}
+
+/* ///////RESPONSIVE MOBILE /////// */
+
+
+@media (max-width: 320px) {
+
+	/* HEADER */
+	.conteinerHeader {
+		min-height: 100px;
+		margin-bottom: 10px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	
+	.HeaderLogo {
+		padding: 10px 0px;
+	}
+
+	.HeaderHome .HeaderLogo .LogoPrincipal .Logo {
+		width: 30px;
+	}
+
+	.NavBar{
+		text-align: center;
+	}
+
+	.HeaderRedes .IconRedes {
+		display: none;
+	}
+	/* HEADER END */
+
+	/* SECCION CARROUSEL */
+	.SeccionSliderPrincipal {
+		min-height: 500px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.carousel {
+		padding-top: 0px;
+		height: 205px;
+	}
+
+	.SeccionSliderPrincipal .SliderPricipal .Title {
+	    font-size: 2rem;
+	}
+
+	.SeccionSliderPrincipal .SliderPricipal p {
+	    font-size: 12px;
+	}
+
+	.SeccionSliderPrincipal .BannerDomicilio {
+		height: 100px;
+	}
+
+	.SeccionSliderPrincipal .BannerDomicilio .text {
+		font-size: 20px;
+	}
+
+	.SeccionSliderPrincipal .Video {
+		width: 320px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.SeccionSliderPrincipal .Video .VideoYouTube {
+		width: 300px;
+		height: 200px;
+	}
+	/* SECCION CARROUSEL END */
+
+	/* SECCION SERVICIO */
+	.conteinerServicio {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.conteinerServicio .InfoServicio {
+		max-width: 280px;
+		margin-top: 10px;
+	}
+
+	.conteinerServicio .InfoServicio img {
+		width: 280px;
+		border-radius: 10px;
+	}
+	/* SECCION SERVICIO END */
+
+	/* SECCION INSTALACION */
+	.MarginInstalacion a {
+		padding: 15px 0px;
+	}
+
+	.SeccionInstalacion .ConteinerInstalacion {
+	    margin-top: 0px;
+	    height: 400px;
+	    display: flex;
+	    justify-content: center;
+	}
+
+	.SeccionInstalacion .ConteinerInstalacion .InstalacionInfo {
+	    width: 210px;
+	}
+
+	.SeccionInstalacion .ConteinerInstalacion .InstalacionInfo .text {
+	    width: 200px;
+	}
+
+	/* SECCION INSTALACION END */
+
+	/* SECCION MEDIOS DE PAGO */
+	.SeccionMediosDePago .conteinerMediosPago {
+		margin-bottom: 0px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.conteinerMediosPago .TitleMediosDePago {
+		text-align: center;		
+	}
+
+	.conteinerMediosPago .mediosPago {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.conteinerMediosPago .mediosPago .flexImg {
+		margin-top: 0px;
+		max-width: 260px;
+		height: 300px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.conteinerMediosPago .mediosPago .flexImg h4 {
+		height: 25px;
+		margin-bottom: 5px;
+	}
+
+	.conteinerMediosPago .mediosPago .flexImg .img1{
+		min-height: 250px;
+		margin-top: 0px;
+	}
+
+	.conteinerMediosPago .mediosPago .flexImg .img2{
+		min-height: 250px;
+		margin-top: 0px;
+	}
+
+	.conteinerMediosPago .mediosPago .flexImg .img3{
+		min-height: 250px;
+		margin-top: 0px;
+	}
+
+	/* SECCION MEDIOS DE PAGO END */
+
+	/* SECCION CONTACTO */
+
+	.SeccionContacto .conteinerContacto {
+		width: 320px;
+		padding: 15px 0px;
+	}
+
+	.SeccionContacto .TitleContacto {
+		height: 80px;
+	}
+
+	.SeccionContacto .TitleContacto .SubTitle {
+		margin-bottom: 0px;
+	}
+
+	.conteinerContacto .Formulario {
+		max-width: 280px;
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+
+	.conteinerContacto .Formulario form {
+		width: 260px;
+	}
+
+	/* SECCION CONTACTO END */
+
+	/* SECCION TESTIMONIO */
+
+	.SeccionClientes .conteinerClientes {
+		padding: 20px 0px;
+	}
+
+	.conteinerClientes .TestimonioCliente {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.conteinerClientes .TestimonioCliente .ClienteGrup {
+		max-width: 260px;
+	}
+
+	.conteinerClientes .TestimonioCliente h4 {
+		font-size: 16px;
+	}
+
+	.conteinerClientes .TestimonioCliente p {
+		font-size: 13px;
+	}
+
+	/* SECCION TESTIMONIO END */
+
+	/* SECCION FOOTER */
+	.conteinerFooter {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-right: 20px;
+	}
+
+	.conteinerFooter .NavFooter {
+		display: none;
+	}
+	/* SECCION FOOTER END */
+}

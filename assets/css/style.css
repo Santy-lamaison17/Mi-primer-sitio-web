@@ -1,0 +1,697 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #BBFFFC;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* HEADER */
+
+.navbar {
+	background-color: #1f1666;
+	position: fixed;
+	z-index: 999;
+	min-height: 100px;
+	top: 0;
+	width: 100%;
+}
+
+.navbar-brand {
+	padding-left: 1rem;
+}
+
+.navbar-brand img {
+	width: 60px;
+}
+
+.collapse {
+	display: flex;
+	justify-content: center;
+}
+
+.NavLink {
+	font-size: 1rem;
+	color: white;
+	text-decoration: none;
+	padding: 0px 5px;
+}
+
+.headerRedes {
+	display: flex;
+	justify-content: space-around;
+}
+
+/* ENCABEZADO REDES */
+
+.navbar .HeaderRedes {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar .HeaderRedes .IconRedes {
+	margin: 0px 10px;
+	transition: all 0.5s ease;
+	width: 30px;
+}
+
+.navbar .HeaderRedes .IconRedes:hover {
+	transform: rotate(360deg);
+}
+
+/* SECCION CARROUSEL */
+
+.SeccionSliderPrincipal {
+	height: auto;
+	margin-top: 100px;
+}
+
+.carousel-item {
+	height: 27rem;
+	position: relative;
+}
+
+.carousel-item .container {
+	text-align: center;
+	color: white;
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding-top: 50px;
+}
+
+.carousel-item .container h1 {
+	position: sticky;
+	color: #1f1666;
+}
+
+.SeccionSliderPrincipal {
+	padding-top: 20px;
+}
+
+.SeccionSliderPrincipal .SliderPricipal .Title {
+	font-family: 'Rubik', sans-serif;
+	font-size: 3rem;
+}
+
+/* Banner 24hs */
+.SeccionSliderPrincipal .BannerDomicilio {
+	background-image: url("../img/banner-bg.png");
+	background-size: cover;
+	background-position: bottom;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.SeccionSliderPrincipal .BannerDomicilio .text {
+	text-align: center;
+	color: red;
+	font-size: 2rem;
+	font-weight: bold;
+
+}	
+
+/* Video Youtube */
+.SeccionSliderPrincipal .Video {
+	display: grid;
+	justify-content: center;
+}
+
+.SeccionSliderPrincipal .Video .VideoYouTube {
+	width: 500px;
+	height: 300px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* SERVICIO */
+
+.conteinerServicio {
+	margin: 20px 0px;
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.conteinerServicio .TitleServicio {
+	padding: 20px;
+	grid-column: 1 / 3;
+	text-align: center;
+}
+
+.SeccionServicio .TitleServicio .SubTitle {
+	font-family: 'Rubik', sans-serif;
+	font-size: 2rem;
+	color: #1f1666;
+}
+
+.conteinerServicio .InfoServicio {
+	background-color: white;
+	margin: 2rem auto;
+	text-align: center;
+	box-shadow: 5px 5px 10px;
+	border-radius: 10px;
+}
+
+.conteinerServicio .InfoServicio img {
+	border-radius: 10px;
+}
+
+.conteinerServicio .info3 {
+	grid-column: 1 / 3;
+} 
+
+.SeccionServicio div h4 {
+	font-size: 16px;
+	padding: 10px 0px;
+}
+
+.conteinerServicio .spaceBtnVerMas {
+	grid-column: 1 / 3;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 30px 0px;
+}
+
+.SeccionServicio .BtnVerMas {
+	text-decoration: none;
+	width: 100px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #1f1666;
+	text-align: center;
+	border: 1px solid #1f1666;
+	border-radius: 5px;
+	padding: 10px;
+	transition-duration: 0.5s;
+}
+
+.SeccionServicio .BtnVerMas:hover {
+	background-color: #1f1666;
+	color: white;
+
+}
+
+/*/////// PAGINA SERVICIO ////////*/
+
+.SeccionServicio {
+	margin-top: 150px;
+}
+
+.SeccionServicio .MarginServicio {
+	margin: 50px 150px;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.SeccionServicio .MarginServicio .TitleServicio {
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+}
+
+.SeccionServicio .MarginServicio .text {
+	text-align: center;
+	width: 100%;
+	padding: 3rem;
+	display: inline-flex;
+	justify-content: center;
+}
+
+.SeccionServicio .MarginServicio .InfoServicio {
+	background-color: white;
+	width: 300px;
+	height: 320px;
+	margin-top: 2rem;
+	box-shadow: 5px 5px 10px;
+	border-radius: 10px;
+}
+
+.SeccionServicio .MarginServicio .InfoServicio h4 {
+	text-align: center;
+	padding: 10px;
+}
+
+.SeccionServicio .MarginServicio .InfoServicio img {
+	width: 300px;
+	padding-top: 10px;
+}
+
+/*  SECCION INSTALACION */
+
+.SeccionInstalacion .ConteinerInstalacion {
+	margin-top: 30px;
+	height: 300px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.SeccionInstalacion .ConteinerInstalacion .TitleInstalacion {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.SeccionInstalacion .ConteinerInstalacion .TitleInstalacion .SubTitle {
+	padding: 20px 0px;
+	font-family: 'Rubik', sans-serif;
+	font-size: 2rem;
+	color: #1f1666;
+}
+
+.SeccionInstalacion .ConteinerInstalacion .InstalacionInfo {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.SeccionInstalacion .ConteinerInstalacion .InstalacionInfo .text {
+	width: 50%;
+}
+
+.SeccionInstalacion .ConteinerInstalacion .BtnVerMasInstalacion {
+	margin: 30px 0px;
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.SeccionInstalacion .ConteinerInstalacion .BtnVerMas {
+	width: 100px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: #1f1666;
+	border: 1px solid #1f1666;
+	border-radius: 5px;
+	padding: 10px;
+	transition-duration: 0.5s;
+}
+
+.ConteinerInstalacion .BtnVerMas:hover {
+	background-color: #1f1666;
+	color: white;
+}
+
+/*///////// PAGINA INSTALACION ///////////*/
+
+.SeccionInstalacion {
+	margin-top: 100px;
+}
+
+.SeccionInstalacion .conteinerInstalacion {
+	padding: 20px 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: 100px auto;
+	justify-content: space-around;
+}
+
+.SeccionInstalacion .conteinerInstalacion .TitleInstalacion {
+	width: 100%;
+	grid-column: 1 / 5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.SeccionInstalacion .conteinerInstalacion .TitleInstalacion .SubTitle {
+	font-family: 'Rubik', sans-serif;
+	font-size: 2rem;
+	color: #1f1666;
+}
+
+.SeccionInstalacion .InfoInstalacion {
+	margin-top: 20px;
+	text-align: center;
+	width: 170px;
+	height: auto;
+}
+
+.SeccionInstalacion .InfoInstalacion h3 {
+	color: red;
+}
+
+.SeccionInstalacion .InfoInstalacion p {
+	padding-top: 20px;
+	font-size: 14px; 
+}
+
+/* MEDIOS DE PAGO */
+
+.conteinerMediosPago {
+	margin: 30px 0px 40px 0px;
+	display: flex;
+	flex-direction: column;
+}
+
+.SeccionMediosDePago .conteinerMediosPago .TitleMediosDePago {
+	display: flex;
+	justify-content: center;
+}
+
+.SeccionMediosDePago .TitleMediosDePago .SubTitle {
+	font-family: 'Rubik', sans-serif;
+	font-size: 2rem;
+	color: #1f1666;
+}
+
+.SeccionMediosDePago .conteinerMediosPago .mediosPago {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	column-gap: 10px;
+}
+
+.SeccionMediosDePago .conteinerMediosPago .mediosPago .flexImg {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.SeccionMediosDePago .img1 {
+	margin-top: 10px;
+	width: 300px;
+	min-height: 300px;
+	background-image: url(../img/medios-pago/medio-pago-01.jpg);
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	box-shadow: 5px 5px 30px;
+	border-radius: 10px;
+}
+
+.SeccionMediosDePago .img2 {
+	margin-top: 10px;
+	width: 300px;
+	min-height: 300px;
+	background-image: url(../img/medios-pago/medio-pago-02.jpg);
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	box-shadow: 5px 5px 30px;
+	border-radius: 10px;
+}
+
+.SeccionMediosDePago .img3 {
+	margin-top: 10px;
+	width: 300px;
+	min-height: 300px;
+	background-image: url(../img/medios-pago/medio-pago-03.jpg);
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	box-shadow: 5px 5px 30px;
+	border-radius: 10px;
+}
+
+
+/*/////// PAGINA NOSOTROS /////////*/
+
+.SeccionNosotros {
+	margin-top: 120px;
+}
+
+.SeccionNosotros .conteinerNosotros {
+	width: 100%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	/*display: grid;
+	grid-template-rows: 250px 250px;*/
+}
+
+.SeccionNosotros .InfoNosotros {
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.SeccionNosotros .InfoNosotros h1 {
+	color: #1f1666;
+	font-size: 35px;
+	display: flex;
+	justify-content: center;
+}
+
+.SeccionNosotros .InfoNosotros h3 {
+	color: #1f1666;
+	font-size: 25px;
+}
+
+.SeccionNosotros .InfoNosotros .text {
+	padding: 10px 0px;
+	text-align: center;
+}
+
+/* CONTACTO */
+
+.SeccionContacto .conteinerContacto {
+	width: 100%;
+	padding: 30px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.SeccionContacto .TitleContacto {
+	width: 100%;
+}
+
+.SeccionContacto .TitleContacto .SubTitle {
+	padding: 20px;
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+	font-size: 2rem;
+	color: #1f1666;
+}
+
+.SeccionContacto .Formulario {
+	background-image: linear-gradient(to top, #3366ff, #BBFFFC);
+	width: 500px;
+	padding-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 15px;
+}
+
+form .FormGrup {
+	padding: 10px 0px;
+}
+
+.FormGrup label {
+	margin: 5px 0px;
+}
+
+.FormGrup input {
+	padding: 10px;
+	width: 250px;
+	border-radius: 10px;
+	width: 100%;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+  border-radius: 10px;	
+}
+
+.Formulario .FormGrupRadio {
+	padding: 10px 0px;
+}
+
+.FormGrupButton {
+	padding: 10px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn-danger {
+	width: 100px;
+}
+
+/*///////// PAGINA CONTACTO //////////*/
+
+.SeccionContacto {
+	margin-top: 100px;
+}
+
+.SeccionContacto .TitleContacto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.SeccionContacto .TitleContacto .text {
+	width: 500px;
+	text-align: center;
+	padding: 10px 0px;
+}
+
+.SeccionContacto .Formulario {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+} 
+
+/* CONTACTANOS FOOTER */
+
+.FooterContactanos .BannerContactarFooter {
+	background-color: #ed1b24;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.BannerContactarFooter .ContactarLink {
+	padding: 10px 0px;
+}
+
+.BannerContactarFooter .ContactarLink .ContactarBtn {
+	background-color: #ed1b24;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: bold;
+	color: white;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.BannerContactarFooter .ContactarLink .ContactarBtn:hover {
+	background-color: white;
+	color: #ed1b24;
+}
+
+/* CLIENTES */
+
+.SeccionClientes {
+	background-image: linear-gradient(to top, #1f1666, #BBFFFC); 
+}
+
+.conteinerClientes {
+	padding: 40px 0px;
+}
+
+.SeccionClientes .TitleCliente .SubSubTitle {
+	font-family: 'Rubik', sans-serif;
+	font-size: 25px;
+	padding: 10px;
+	text-align: center;
+}
+
+.conteinerClientes .TestimonioCliente {
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 400px;
+	grid-template-rows: repeat(3 1fr);
+	justify-content: center;
+	grid-row-gap: 10px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.SeccionClientes .TestimonioCliente .ClienteGrup {
+	background-color: white;
+	padding: 10px;
+	width: 400px;
+	height: 100px;
+	border-radius: 10px;
+	transition: all 2s;
+}
+
+.conteinerClientes .TestimonioCliente .ClienteGrup:hover {
+	/*width: 500px;*/
+	transform: translateX(60px);
+}
+
+.SeccionClientes .TestimonioCliente .text {
+	font-style: italic;
+}
+
+/* FOOTER */
+
+.SeccionFooter {
+	background-color: #1f1666;
+	height: auto;
+}
+
+.conteinerFooter {
+	padding: 20px 0px; 
+	display: grid;
+	grid-template-columns: 300px auto 300px;
+	grid-template-rows: auto;
+}
+
+.SeccionFooter .FooterText {
+	padding-left: 20px;
+	color: #4f6b95;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+}
+
+.conteinerFooter .NavFooter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.conteinerFooter .NavFooter .ListFooter li {
+	padding: 5px 0px;
+}
+
+.conteinerFooter .FooterRedes {
+	text-align: center;
+}
+
+.SeccionFooter .FooterRedes .FooterTitleRedes {
+	padding: 10px 0px;
+	color: #4f6b95;
+	font-size: 20px;
+}
+
+.SeccionFooter .FooterRedes .FooterTitleRedes .IconRedes {
+	width: 30px;
+}
+
+footer div ul li {
+	list-style: none;
+}
+
+footer div ul li a {
+	text-decoration: none;
+	color: #4f6b95;
+	font-size: 17px;
+}
