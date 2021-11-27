@@ -1,5 +1,30 @@
 @media (max-width: 991px) {
-	.navbar .HeaderRedes {
+
+	.btn {
+		margin-right: 1rem;
+	}
+
+	.navbar .headerRedes {
+		display: none;
+	}
+
+	.conteinerServicio .InfoServicio {
+	    margin: 2rem 15px;
+	    width: 300px;
+	}
+
+	.SeccionClientes .TestimonioCliente .text {
+	    font-size: 14px;
+	}
+	
+	.conteinerFooter {
+	    padding: 20px 0px;
+	    display: grid;
+	    grid-template-columns: auto auto;
+	    grid-template-rows: auto;
+	}
+
+	.conteinerFooter .NavFooter {
 		display: none;
 	}
 }
@@ -8,9 +33,38 @@
 
 @media (max-width: 768px) {
 
+	/* SECCION HEADER */
+	.navbar-brand {
+	    padding-left: 4rem;
+	    margin-right: 0px;
+	}
+
+	.navbar-brand img {
+		max-width: 60px;
+		height: 60px;
+	}
+
+	.btn{
+		margin-right: 4rem;
+	}
+
+	.navbar .headerRedes {
+	    display: none;
+	}
+	/* SECCION HEADER END */
+
 	/* SECCION CARROUSEL */
 	.SeccionSliderPrincipal {
 		height: auto;
+	}
+
+	.SeccionSliderPrincipal .BannerDomicilio {
+		height: 100px;
+	}
+
+	.SeccionSliderPrincipal .BannerDomicilio .text {
+		font-size: 24px;
+		margin-bottom: 0px;
 	}
 
 	.SeccionSliderPrincipal .Video {
@@ -23,7 +77,11 @@
 	}
 	/* SECCION CARROUSEL END */
 
-	/* SECCION CARROUSEL */
+	/* SECCION SERVICIO */
+	.SeccionServicio {
+	    margin-top: 150px;
+	}
+
 	.conteinerServicio .InfoServicio {
 		max-width: 250px;
 	}
@@ -32,7 +90,13 @@
 		width: 250px;
 		border-radius: 10px;
 	}
-	/* SECCION CARROUSEL END */
+	/* SECCION SERVICIO END */
+
+	/* SECCION INSTALACION */
+	.SeccionInstalacion {
+		margin-top: 0px; 
+   }
+   /* SECCION INSTALACION END */
 
 	/* SECCION MEDIOS DE PAGO */
 	.conteinerMediosPago {
@@ -46,10 +110,8 @@
 	}
 
 	.conteinerMediosPago .mediosPago {
-		margin: 2rem;
 		display: flex;
 		flex-direction: row;
-		column-gap: 10px;
 	}
 
 	.conteinerMediosPago .mediosPago .flexImg {
@@ -57,6 +119,10 @@
 		display: flex;
 		flex-direction: column;
 		text-align: center;
+	}
+
+	.SeccionMediosDePago .conteinerMediosPago .mediosPago .flexImg h4{
+	    font-size: 18px;
 	}
 
 	.conteinerMediosPago .mediosPago .flexImg .img1 {
@@ -72,10 +138,105 @@
 	}
 	/* SECCION MEDIOS DE PAGO END */
 
+	/* pagina nosotros */
+	.SeccionNosotros {
+		margin-top: 100px;
+	}
+
+	.SeccionNosotros .conteinerNosotros {
+		width: 100%;
+	    height: auto;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: space-around;
+	    padding-top: 40px;
+	}
+
+	/*.SeccionNosotros .InfoNosotros {
+		width: 60%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.SeccionNosotros .InfoNosotros h1 {
+		color: #1f1666;
+		font-size: 35px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.SeccionNosotros .InfoNosotros h3 {
+		color: #1f1666;
+		font-size: 25px;
+	}
+
+	.SeccionNosotros .InfoNosotros .text {
+		padding: 10px 0px;
+		text-align: center;
+	}*/
+	/* pagina nosotros end */
+
+	/* SECCION CONTACTO */
+	.SeccionContacto {
+	    margin-top: 50px;
+	}
+
+	/* pagina contacto */
+
+	.topContact {
+		margin-top: 100px;
+	}
+
+	/*.SeccionContacto .TitleContacto {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.SeccionContacto .TitleContacto .text {
+		width: 500px;
+		text-align: center;
+		padding: 10px 0px;
+	}
+
+	.SeccionContacto .Formulario {
+		margin-top: 20px;
+		display: flex;
+		justify-content: center;
+	} */
+
+	/* pagina contacto end */
+
+	/* SECCION CONTACTO END */
+
+	/* SECCION CLIENTES */
+	.SeccionClientes {
+	    padding: 60px 0px;
+	}
+
+	.SeccionClientes .TestimonioCliente .text {
+	    font-size: 14px;
+	}
+
+	/* SECCION CLIENTES END */  
+
 	/* FOOTER */
 	.conteinerFooter {
 		display: flex;
 		justify-content: space-around;
+		flex-direction: column;
+	}
+
+	.SeccionFooter .FooterText {
+		color: #4f6b95;
+		font-size: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0px;
 	}
 
 	.conteinerFooter .NavFooter {
@@ -84,35 +245,93 @@
 	/* FOOTER END */
 }
 
+@media (max-width: 679px) {
+
+	/* SECCION INSTALACION */
+	.SeccionInstalacion {
+		padding-bottom: 40px;
+	}
+
+	/* pagina instalacion */
+
+	.top-insta {
+		margin-top: 100px;
+	}
+
+	.SeccionInstalacion .conteinerInstalacion {
+	    padding: 30px 0px;
+	    width: 100%;
+	    display: flex;
+   	 	flex-wrap: wrap;
+    	justify-content: space-evenly;
+	}
+
+	.SeccionInstalacion .InfoInstalacion {
+		margin-top: 20px;
+		text-align: center;
+		width: 180px;
+		height: auto;
+	}
+
+	/* pagina instalacion end */
+
+	/* SECCION INSTALACION END */
+
+	/* SECCION MEDIOS DE PAGO */
+	.SeccionMediosDePago .conteinerMediosPago .mediosPago {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		column-gap: 10px;
+	}
+
+	.SeccionMediosDePago .conteinerMediosPago .mediosPago .flexImg {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 25px;
+	}
+	/* SECCION MEDIOS DE PAGO END */
+
+
+}
+
 /* ///////RESPONSIVE MOBILE /////// */
 
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
 
 	/* HEADER */
-	.conteinerHeader {
-		min-height: 100px;
-		margin-bottom: 10px;
+	.navbar {
+		min-height: 75px;
+		/*margin-bottom: 10px;*/
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
 	}
-	
-	.HeaderLogo {
-		padding: 10px 0px;
+
+	.navbar-brand{
+		padding: 0px;
+		margin: 0px;
+		width: 60px;
 	}
 
-	.HeaderHome .HeaderLogo .LogoPrincipal .Logo {
-		width: 30px;
+	.navbar-brand img {
+		margin-left: 1rem;
+		max-width: 60px;
+		height: 60px;
 	}
 
-	.NavBar{
-		text-align: center;
+	.btn {
+	    margin-right: 1rem;
 	}
 
-	.HeaderRedes .IconRedes {
-		display: none;
+	.headerRedes {
+	    display: none;
 	}
+
 	/* HEADER END */
 
 	/* SECCION CARROUSEL */
@@ -120,11 +339,12 @@
 		min-height: 500px;
 		display: flex;
 		flex-direction: column;
+		margin-top: 75px;
 	}
 
 	.carousel {
 		padding-top: 0px;
-		height: 205px;
+		/*height: 205px;*/
 	}
 
 	.SeccionSliderPrincipal .SliderPricipal .Title {
@@ -140,11 +360,12 @@
 	}
 
 	.SeccionSliderPrincipal .BannerDomicilio .text {
-		font-size: 20px;
+		font-size: 17px;
+		margin-bottom: 0px;
 	}
 
 	.SeccionSliderPrincipal .Video {
-		width: 320px;
+		width: 100%;
 		display: flex;
 		justify-content: center;
 	}
@@ -156,9 +377,15 @@
 	/* SECCION CARROUSEL END */
 
 	/* SECCION SERVICIO */
+
+	.SeccionServicio {
+	    margin-top: 0px;
+	}
+
 	.conteinerServicio {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 	}
 
 	.conteinerServicio .InfoServicio {
@@ -170,16 +397,39 @@
 		width: 280px;
 		border-radius: 10px;
 	}
+
+	/* pagina servicio */
+
+	.top {
+		margin-top: 120px;
+	}
+
+	.SeccionServicio .MarginServicio {
+	    margin: 50px 20px;
+	    height: auto;
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-around;
+	}
+
+	/* pagina servicio end */
+
 	/* SECCION SERVICIO END */
 
 	/* SECCION INSTALACION */
+
+	.SeccionInstalacion {
+	    margin-top: 0px;
+	    padding-bottom: 0px;
+	}
+
 	.MarginInstalacion a {
 		padding: 15px 0px;
 	}
 
 	.SeccionInstalacion .ConteinerInstalacion {
 	    margin-top: 0px;
-	    height: 400px;
+	    height: 467px;
 	    display: flex;
 	    justify-content: center;
 	}
@@ -192,6 +442,29 @@
 	    width: 200px;
 	}
 
+	/* pagina instalacion */
+
+	.top-insta {
+		margin-top: 76px;
+	}
+
+	.SeccionInstalacion .conteinerInstalacion {
+	    padding: 30px 0px;
+	    width: 100%;
+	    display: flex;
+   	 	flex-wrap: wrap;
+    	justify-content: space-evenly;
+	}
+
+	.SeccionInstalacion .InfoInstalacion {
+		margin-top: 20px;
+		text-align: center;
+		width: 150px;
+		height: auto;
+	}
+
+	/* pagina instalacion end */
+
 	/* SECCION INSTALACION END */
 
 	/* SECCION MEDIOS DE PAGO */
@@ -199,16 +472,18 @@
 		margin-bottom: 0px;
 		display: flex;
 		flex-direction: column;
+	    padding-bottom: 40px;
 	}
 
 	.conteinerMediosPago .TitleMediosDePago {
 		text-align: center;		
 	}
 
-	.conteinerMediosPago .mediosPago {
+	.SeccionMediosDePago .conteinerMediosPago .mediosPago {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+	    margin-top: 0px;
 	}
 
 	.conteinerMediosPago .mediosPago .flexImg {
@@ -241,10 +516,24 @@
 
 	/* SECCION MEDIOS DE PAGO END */
 
+	/* pagina nosotros */
+
+	.SeccionNosotros .InfoNosotros h3 {
+		color: #1f1666;
+		font-size: 22px;
+    	text-align: center;
+	}
+
+	/* pagina nosotros end */
+
 	/* SECCION CONTACTO */
 
+	.SeccionContacto {
+	    margin-top: 0px;
+	}
+
 	.SeccionContacto .conteinerContacto {
-		width: 320px;
+		width: 100%;
 		padding: 15px 0px;
 	}
 
@@ -266,6 +555,39 @@
 		width: 260px;
 	}
 
+	.FormGrupButton .btn{
+		width: 90px;
+	}
+
+	.FormGrupButton .btn .text{
+		font-size: 14px;
+	}
+
+	/* pagina contacto */
+
+	.topContact {
+		margin-top: 76px;
+	}
+
+	.SeccionContacto .TitleContacto {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.SeccionContacto .TitleContacto .SubTitle {
+		width: 100%;
+	}
+
+	.SeccionContacto .TitleContacto .text {
+		width: 100%;
+    	font-size: 14px;
+		text-align: center;
+		padding: 10px 0px;
+	}
+
+	/* pagina contacto end */
 	/* SECCION CONTACTO END */
 
 	/* SECCION TESTIMONIO */
@@ -286,10 +608,12 @@
 
 	.conteinerClientes .TestimonioCliente h4 {
 		font-size: 16px;
+    	margin-bottom: 0px;
 	}
 
-	.conteinerClientes .TestimonioCliente p {
-		font-size: 13px;
+	.SeccionClientes .TestimonioCliente .text {
+	    font-size: 12px;
+   		margin-bottom: 0px;
 	}
 
 	/* SECCION TESTIMONIO END */
@@ -305,5 +629,20 @@
 	.conteinerFooter .NavFooter {
 		display: none;
 	}
+
+	.SeccionFooter .FooterText {
+		color: #4f6b95;
+		font-size: 14px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.SeccionFooter .FooterRedes .FooterTitleRedes {
+		padding: 10px 0px;
+		color: #4f6b95;
+		font-size: 16px;
+	}
+
 	/* SECCION FOOTER END */
 }
