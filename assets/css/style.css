@@ -26,16 +26,21 @@ img {
 }
 
 .navbar-brand {
-	padding-left: 1rem;
+	padding-left: 3rem;
 }
 
 .navbar-brand img {
 	width: 60px;
 }
 
+.navbar-toggler{
+	background-color: white;
+}
+
 .collapse {
 	display: flex;
 	justify-content: center;
+	text-align: center;
 }
 
 .NavLink {
@@ -54,6 +59,7 @@ img {
 
 .navbar .HeaderRedes {
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 }
@@ -76,7 +82,7 @@ img {
 }
 
 .carousel-item {
-	height: 27rem;
+	height: auto;
 	position: relative;
 }
 
@@ -104,6 +110,10 @@ img {
 }
 
 /* Banner 24hs */
+.bg-color {
+	background-color: #D4FFFD;
+}
+
 .SeccionSliderPrincipal .BannerDomicilio {
 	background-image: url("../img/banner-bg.png");
 	background-size: cover;
@@ -150,6 +160,7 @@ img {
 }
 
 .SeccionServicio .TitleServicio .SubTitle {
+	text-align: center;
 	font-family: 'Rubik', sans-serif;
 	font-size: 2rem;
 	color: #1f1666;
@@ -241,8 +252,10 @@ img {
 }
 
 .SeccionServicio .MarginServicio .InfoServicio h4 {
+	font-size: 14px;
 	text-align: center;
 	padding: 10px;
+	margin-bottom: 0px;
 }
 
 .SeccionServicio .MarginServicio .InfoServicio img {
@@ -252,9 +265,13 @@ img {
 
 /*  SECCION INSTALACION */
 
+.SeccionInstalacion {
+	background-color: #D4FFFD;
+}
+
 .SeccionInstalacion .ConteinerInstalacion {
 	margin-top: 30px;
-	height: 300px;
+	height: 346px;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -470,6 +487,10 @@ img {
 
 /* CONTACTO */
 
+.SeccionContacto {
+	background-color: #D4FFFD;
+}
+
 .SeccionContacto .conteinerContacto {
 	width: 100%;
 	padding: 30px 0px;
@@ -595,7 +616,8 @@ form .FormGrup {
 /* CLIENTES */
 
 .SeccionClientes {
-	background-image: linear-gradient(to top, #1f1666, #BBFFFC); 
+	/* background-image: linear-gradient(to top, #1f1666, #BBFFFC); */
+	background-color: #BBFFFC;  
 }
 
 .conteinerClientes {
@@ -638,6 +660,7 @@ form .FormGrup {
 
 .SeccionClientes .TestimonioCliente .text {
 	font-style: italic;
+	font-size: 14px;
 }
 
 /* FOOTER */
