@@ -57,20 +57,20 @@ img {
 
 /* ENCABEZADO REDES */
 
-.navbar .HeaderRedes {
+.navbar .headerRedes {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 }
 
-.navbar .HeaderRedes .IconRedes {
+.navbar .headerRedes .IconRedes {
 	margin: 0px 10px;
 	transition: all 0.5s ease;
 	width: 30px;
 }
 
-.navbar .HeaderRedes .IconRedes:hover {
+.navbar .headerRedes .IconRedes:hover {
 	transform: rotate(360deg);
 }
 
